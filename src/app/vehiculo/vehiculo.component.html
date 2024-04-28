@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="col-6">
     <table class="table">
-      <thead>
+      <thead class="table-dark">
         <tr>
           <th class="h4">#</th>
           <th class="h4">Marca</th>
@@ -11,9 +11,9 @@
       </thead>
       <tbody>
         <tr *ngFor="let veh of vehiculos">
-          <td>
+          <th>
             <dd>{{veh.id}}</dd>
-          </td>
+          </th>
           <td>
             <dd>{{veh.marca}}</dd>
           </td>
