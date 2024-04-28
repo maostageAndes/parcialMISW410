@@ -1,3 +1,30 @@
-<p>
-  vehiculo works!
-</p>
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Marca</th>
+          <th class="h4">Linea</th>
+          <th class="h4">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let veh of vehiculos">
+          <td>
+            <dd>{{veh.id}}</dd>
+          </td>
+          <td>
+            <dd>{{veh.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{veh.linea}}</dd>
+          </td>
+          <td>
+            <dd>{{veh.modelo}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
